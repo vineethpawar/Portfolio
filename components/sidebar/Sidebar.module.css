@@ -1,0 +1,55 @@
+.container {
+    position: relative;
+    width: 50px;
+}
+
+.icons_container_top, .icons_container_bottom {
+    display: flex;
+    flex-direction: column;
+    padding:40px 10px;
+    align-items: center;
+    color: white;
+    row-gap: 30px;
+    height: 100vh;
+}
+
+.icons_container_top {
+    justify-content: start;
+}
+
+.icons_container_bottom {
+    justify-content: end;
+}
+
+.line_top, .line_bottom {
+    position: absolute;
+    left: 50%;
+    transform: translateX('-50%');
+    height: 40vh;
+    width: 1px;
+    background: #fff;
+    min-height: 300px;
+    overflow: hidden;
+}
+
+.line_top{
+    top: 10px;
+}
+
+.line_bottom {
+    bottom: 10px;
+}
+
+.icon {
+    position: relative;
+    z-index: 5;
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+    background:#000e21 ;
+
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
