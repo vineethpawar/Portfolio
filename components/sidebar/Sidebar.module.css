@@ -28,8 +28,8 @@
     height: 40vh;
     width: 1px;
     background: #fff;
-    min-height: 300px;
     overflow: hidden;
+    animation: sidebarline 700ms ease-in-out;
 }
 
 .line_top{
@@ -47,9 +47,49 @@
     width: 40px;
     padding: 5px;
     background:#000e21 ;
+    cursor: pointer;
 
 }
 
+.bulb_icon {
+    position: absolute;
+    top: 40vh;
+    right: 2.5px;
+    z-index: 5;
+    height: 40px;
+    width: 40px;
+    margin-top: -5px;
+    padding-bottom:60vh ;
+    background:#000e21 ;
+    cursor: pointer;
+    overflow-y: hidden;
+    animation: bulbappear 700ms linear;
+}
+
+
 .icon:hover {
     transform: scale(1.1);
+    transition: 200ms ease-in-out;
+}
+
+
+@keyframes sidebarline {
+    from {
+        height: 0vh;
+    }
+    to{
+        height: 40vh;
+    }
+}
+
+@keyframes bulbappear {
+    0% {
+        opacity: 0;
+    }
+    90%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
